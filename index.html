@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Test</title>
-    <link rel="stylesheet" href="./css/style.css">
+	<title>Sitios Turisticos de Colombia</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>		
+	<link rel="stylesheet" type="text/css" href="./css/mapa.css"/>	
+
+	
 </head>
 <body>
-    <div class="main-container">
-        <h1>City ​​Weather</h1>
-        <div class="container-input">
-            <label for="input-city" class="label-city">City</label>
-            <input type="text" id="input-city" class="input-city">
-            <button id="btn-search">Search</button>
-        </div>
-
-        <div class="container-info">
-            <div class="container-info-city" id="container-info-city">  
-            </div>
-            <div id="container-info-icon">
-            </div>
-        </div>
-    </div>
-    <script src="./js/script.js"></script>
+	
+		<!--Contenedor principal-->
+		<div class="main-container">
+			<h1>Clima de ciudad</h1>
+			<!--Contenedor que maneja la estructura la parte del formulario-->
+			<div class="container-input">
+				<label for="input-city" class="label-city">Digita el nombre de la ciudad</label>
+				<input type="text" id="input-city" class="input-city">
+				<button id="btn-search">Buscar</button>
+				<button id="btn-clear">Limpiar</button>
+			</div>
+			<div class="container-info-city" id="container-info-city">  
+			</div>
+			<div class="container-info">
+				<div id="container-info-icon">
+				</div>
+			</div>
+		</div>
+	
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script>   		
+	
+	<script src="./js/mapa.js"></script>
 </body>
 </html>

@@ -1,14 +1,24 @@
+#map {
+    height: 500px;
+    width: 500px;
+}
 body{
     background-color: rgb(36, 36, 59);
     display: flex;
     justify-content: center;
 
 }
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 .main-container{
     display: flex;
     flex-direction: column;
     background-color: rgb(225, 225, 225);
-    width: 400px;
+    width: 500px;
     padding: 10px;
     margin-top: 100px;
     gap: 10px;
@@ -40,6 +50,15 @@ button{
 }
 button:hover{
     transform: scale(0.9);
+}
+#btn-clear{
+    background-color: orange;
+}
+.container-info-city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
 }
 .container-info-city h2{
     font-size: 56px;
